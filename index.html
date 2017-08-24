@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Assignment on Div and Hover Effect</title>
+        <!-- HTML5 shim for IE8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src=“https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js”></script>
+    <![endif]-->
+<style type="text/css">
+/* Adding background linear gradient to body */
+body{
+	background: -webkit-linear-gradient(white, black);
+    background: -o-linear-gradient(white, black);
+    background: -moz-linear-gradient(white, black);
+    background: linear-gradient(white, black);	
+}
+/*positioning div element at center and adding a backround color */
+#parentDiv{
+	position: relative;
+	height: 300px;
+	width: 300px;
+	background-color: black;
+	left: 40%;
+	right: 40%;
+	background: -webkit-linear-gradient(red, blue);
+    background: -o-linear-gradient(red, blue);
+    background: -moz-linear-gradient(red, blue);
+    background: linear-gradient(red, blue);
+}
+/* Making the square div to a circle div */
+.divCircle{
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 20%;
+}
+/* positioning the header element to appear inside the div */
+.divCircle h2{
+	position: absolute;
+	margin: 0;
+	color: white;
+    top: 40%;
+    left: 35%;
+}
+/* applying over effect on the div elements when hovered on the div */
+.divCircle:hover #divContent{
+color: yellow;
+}
+</style>
+</head>
+<body>
+<header>
+<center><h1>Hover the circle below to see the effect </h1></center>
+</header>
+<!-- main section -->
+<main id="mainSection">
+<section id="firstSection">
+<!-- div element with a header -->
+<div id="parentDiv" class="divCircle">
+<h2 id="divContent">Hover me</h2>
+</div>
+</section>
+</main>	
+<!-- main section ends -->
+</body>
+<!-- end of body -->
+</html>
+<!-- end of html -->
